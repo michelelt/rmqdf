@@ -4,7 +4,6 @@ RUN apt-get update -y
 RUN apt-get install python2.7 -y
 RUN apt-get install wget -y
 RUN apt-get install python-pip -y
-RUN
 RUN rabbitmq-plugins enable rabbitmq_management
 RUN cd ~
 RUN wget http://52.209.57.241:15672/cli/rabbitmqadmin
