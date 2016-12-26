@@ -9,4 +9,5 @@ RUN cd ~
 RUN wget http://52.209.57.241:15672/cli/rabbitmqadmin
 RUN pip install optparse-pretty
 RUN pip install simplejson
+RUN pip install httplib2
 RUN python ./rabbitmqadmin declare queue name=coda durable=true --username=root --password=washomatic
